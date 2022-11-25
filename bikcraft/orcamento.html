@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Orçamento | Bikcraft</title>
+  <meta name="description" content="Orçamento.">
+
+  <link rel="preload" href="./css/style.css" as="style">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+
+<body id="orcamento">
+  <header class="header-bg">
+    <div class="header container">
+    
+      <nav aria-label="primaria">
+        <ul class="header-menu font-1-m cor-0">
+         
+          <li><a href="./orcamento.html">Orçamentos</a></li>
+        </ul>
+      </nav>
+      <a href="./">
+        <img src="./img/dec/top-left-p.svg" alt="Bikcraft">
+      </a>
+    </div>
+
+  </header>
+
+  <main>
+    <div class="titulo-bg">
+      <div class="titulo container">
+        <p class="font-2-l-b cor-5"></p>
+        <h1 class="font-1-xxl cor-p1">Solicite orçamento CarrosXPTO<span class="cor-0">.</span></h1>
+      </div>
+    </div>
+
+    <form class="orcamento container" action="./orcamento.html">
+      
+
+        <div class="orcamento-conteudo" id="orcamento-seguro">
+         
+
+          
+        </div>
+      </div>
+      <div class="orcamento-dados form">
+        <h2 class="font-1-xs cor-9 col-2">dados pessoais</h2>
+        <div>
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome">
+        </div>
+        <div>
+          <label for="sobrenome">Sobrenome</label>
+          <input type="text" id="sobrenome" name="sobrenome">
+        </div>
+        <div class="col-2">
+          <label for="cpf">CPF</label>
+          <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00">
+        </div>
+      
+        <button class="botao col-2">Solicitar Orçamento</button>
+      </div>
+      <div class="orcamento-produto">
+        <h2 class="font-1-xs cor-5">Bikcraft ou Seguro?</h2>
+
+        <input type="radio" name="tipo" value="bikcraft" id="bikcraft">
+        <label for="bikcraft">Básico</label>
+
+        <input type="radio" name="tipo" value="seguro" id="seguro">
+        <label for="seguro">Plus</label>
+
+        <div class="orcamento-conteudo" id="orcamento-bikcraft">
+          <h2 class="font-1-xs cor-5">Escolha a sua</h2>
+
+          <input type="radio" name="produto" value="nimbus" id="nimbus">
+          <label for="nimbus">BMW <span>R$ 10.000</span></label>
+          <div class="orcamento-detalhes">
+            <ul class="font-1-xs cor-8">
+            
+              <li><img src="./img/icones/velocidade.svg" alt=""> 100 km/h</li>
+              <li><img src="./img/icones/rastreador.svg" alt=""> Rastreador</li>
+            </ul>
+            <img src="./img/bicicletas/bmw1.jpg" alt="Bicicleta preta">
+          </div>
+        </div>
+    </form>
+  </main>
+
+ 
+</body>
+
+</html>
